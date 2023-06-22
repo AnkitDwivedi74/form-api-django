@@ -1,0 +1,10 @@
+<form method="POST" action="{% url 'form' %}">
+    {% csrf_token %}
+    <level for="name">Name</level>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <level for="email">Email</level>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
